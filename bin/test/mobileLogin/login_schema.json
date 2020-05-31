@@ -1,0 +1,695 @@
+{
+ "required": [
+    "device_name",
+    "autoshare_flag",
+    "counter",
+    "result",
+    "response"
+  ],
+  "properties": {
+    "device_name": {
+      "$id": "#/properties/device_name",
+      "type": "string",
+      "title": "The Device_name Schema",
+      "default": "",
+      "examples": [
+        "iphone"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "autoshare_flag": {
+      "$id": "#/properties/autoshare_flag",
+      "type": "boolean",
+      "title": "The Autoshare_flag Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "counter": {
+      "$id": "#/properties/counter",
+      "type": "integer",
+      "title": "The Counter Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+   "result": {
+      "$id": "#/properties/result",
+      "type": "object",
+      "title": "The Result Schema",
+      "required": [
+        
+        "email",
+        "username",
+        "auth",
+        "apid",
+        "phone",
+       
+        "trial_expiry",
+        "watchlists",
+        "research_reports",
+        "user_group",
+        "first_login",
+        "last_visit",
+        "highlight_color",
+        "id",
+        "popups",
+        "feature_visited",
+        "user_group_with_fullname",
+        "highlight_tags",
+        "sid",
+        "beta_login",
+        
+        "pticker_setting",
+        "fullname",
+        "edge_emails",
+        "all_labels",
+        "tickers",
+        "options"
+      ],
+      "properties": {
+        "offline_chats": {
+          "$id": "#/properties/result/properties/offline_chats",
+          "type": "array",
+          "title": "The Offline_chats Schema"
+        },
+        "slope": {
+          "$id": "#/properties/result/properties/slope",
+          "type": "string",
+          "title": "The Slope Schema",
+          "default": "",
+          "examples": [
+            "6"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "news_popup": {
+          "$id": "#/properties/result/properties/news_popup",
+          "type": "object",
+          "title": "The News_popup Schema"
+        },
+        "features": {
+          "$id": "#/properties/result/properties/features",
+          "type": "array",
+          "title": "The Features Schema"
+        },
+        "redbars_doc_types": {
+          "$id": "#/properties/result/properties/redbars_doc_types",
+          "type": "array",
+          "title": "The Redbars_doc_types Schema"
+        },
+        "falcon_token": {
+          "$id": "#/properties/result/properties/falcon_token",
+          "type": "string",
+          "title": "The Falcon_token Schema",
+          "default": "",
+          "examples": [
+            "35cd8049-f08c-496f-8df2-8914fdd0624d"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "show_query_logical_analysis": {
+          "$id": "#/properties/result/properties/show_query_logical_analysis",
+          "type": "boolean",
+          "title": "The Show_query_logical_analysis Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "email": {
+          "$id": "#/properties/result/properties/email",
+          "type": "string",
+          "title": "The Email Schema",
+          "default": "",
+          "examples": [
+            "sangeeta.nandal@sentieo.com"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "news_filter_default": {
+          "$id": "#/properties/result/properties/news_filter_default",
+          "type": "string",
+          "title": "The News_filter_default Schema",
+          "default": "",
+          "examples": [
+            "ni"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "excelplugin": {
+          "$id": "#/properties/result/properties/excelplugin",
+          "type": "string",
+          "title": "The Excelplugin Schema",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "load_first_doc": {
+          "$id": "#/properties/result/properties/load_first_doc",
+          "type": "boolean",
+          "title": "The Load_first_doc Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "username": {
+          "$id": "#/properties/result/properties/username",
+          "type": "string",
+          "title": "The Username Schema",
+          "default": "",
+          "examples": [
+            "sangeeta.nandal"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "intercom_hash": {
+          "$id": "#/properties/result/properties/intercom_hash",
+          "type": "string",
+          "title": "The Intercom_hash Schema",
+          "default": "",
+          "examples": [
+            "f274513530c0d66db8ea0ffd92859e84def1671a353b9423f9cc86b027fcc838"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "login_count": {
+          "$id": "#/properties/result/properties/login_count",
+          "type": "integer",
+          "title": "The Login_count Schema",
+          "default": 0,
+          "examples": [
+            617
+          ]
+        },
+        "auth": {
+          "$id": "#/properties/result/properties/auth",
+          "type": "string",
+          "title": "The Auth Schema",
+          "default": "",
+          "examples": [
+            "f4668054a5b7c87e59cd16529a3f9b889834d5aa8b67e54aa726331462bbd9f4"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "apid": {
+          "$id": "#/properties/result/properties/apid",
+          "type": "string",
+          "title": "The Apid Schema",
+          "default": "",
+          "examples": [
+            "78e34d2fe6b68cc471bf95c6717f5b05037a233577c5cafbd82c5f319ff2a9eb"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "phone": {
+          "$id": "#/properties/result/properties/phone",
+          "type": "string",
+          "title": "The Phone Schema",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "welcome_center": {
+          "$id": "#/properties/result/properties/welcome_center",
+          "type": "object",
+          "title": "The Welcome_center Schema"
+        },
+        "plotter_features": {
+          "$id": "#/properties/result/properties/plotter_features",
+          "type": "array",
+          "title": "The Plotter_features Schema"
+        },
+        "last_evernote_sync_date": {
+          "$id": "#/properties/result/properties/last_evernote_sync_date",
+          "type": "string",
+          "title": "The Last_evernote_sync_date Schema",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "trial_expiry": {
+          "$id": "#/properties/result/properties/trial_expiry",
+          "type": "null",
+          "title": "The Trial_expiry Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "list_update": {
+          "$id": "#/properties/result/properties/list_update",
+          "type": "boolean",
+          "title": "The List_update Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "watchlists": {
+          "$id": "#/properties/result/properties/watchlists",
+          "type": "array",
+          "title": "The Watchlists Schema"
+        },
+        "news_docsearch_switch": {
+          "$id": "#/properties/result/properties/news_docsearch_switch",
+          "type": "boolean",
+          "title": "The News_docsearch_switch Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "research_reports": {
+          "$id": "#/properties/result/properties/research_reports",
+          "type": "boolean",
+          "title": "The Research_reports Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "sub_watchlist": {
+          "$id": "#/properties/result/properties/sub_watchlist",
+          "type": "array",
+          "title": "The Sub_watchlist Schema"
+        },
+        "alert_settings": {
+          "$id": "#/properties/result/properties/alert_settings",
+          "type": "object",
+          "title": "The Alert_settings Schema"
+        },
+        "user_group": {
+          "$id": "#/properties/result/properties/user_group",
+          "type": "object",
+          "title": "The User_group Schema"
+        },
+        "redlining_mode": {
+          "$id": "#/properties/result/properties/redlining_mode",
+          "type": "integer",
+          "title": "The Redlining_mode Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "new_features_view_flag": {
+          "$id": "#/properties/result/properties/new_features_view_flag",
+          "type": "array",
+          "title": "The New_features_view_flag Schema"
+        },
+        "first_login": {
+          "$id": "#/properties/result/properties/first_login",
+          "type": "boolean",
+          "title": "The First_login Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "last_visit": {
+          "$id": "#/properties/result/properties/last_visit",
+          "type": "integer",
+          "title": "The Last_visit Schema",
+          "default": 0,
+          "examples": [
+            1555575869000
+          ]
+        },
+        "is_staff": {
+          "$id": "#/properties/result/properties/is_staff",
+          "type": "boolean",
+          "title": "The Is_staff Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "last_onenote_sync_date": {
+          "$id": "#/properties/result/properties/last_onenote_sync_date",
+          "type": "string",
+          "title": "The Last_onenote_sync_date Schema",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sector_subsector_map": {
+          "$id": "#/properties/result/properties/sector_subsector_map",
+          "type": "object",
+          "title": "The Sector_subsector_map Schema"
+        },
+        "onenote_enabled_status": {
+          "$id": "#/properties/result/properties/onenote_enabled_status",
+          "type": "integer",
+          "title": "The Onenote_enabled_status Schema",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "highlight_color": {
+          "$id": "#/properties/result/properties/highlight_color",
+          "type": "string",
+          "title": "The Highlight_color Schema",
+          "default": "",
+          "examples": [
+            "#b1d7ff"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "id": {
+          "$id": "#/properties/result/properties/id",
+          "type": "string",
+          "title": "The Id Schema",
+          "default": "",
+          "examples": [
+            "f4668054a5b7c87e59cd16529a3f9b889834d5aa8b67e54aa726331462bbd9f4"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "date_joined": {
+          "$id": "#/properties/result/properties/date_joined",
+          "type": "integer",
+          "title": "The Date_joined Schema",
+          "default": 0,
+          "examples": [
+            1524474289
+          ]
+        },
+        "popups": {
+          "$id": "#/properties/result/properties/popups",
+          "type": "object",
+          "title": "The Popups Schema"
+        },
+        "onenote_sync_status": {
+          "$id": "#/properties/result/properties/onenote_sync_status",
+          "type": "integer",
+          "title": "The Onenote_sync_status Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "feature_visited": {
+          "$id": "#/properties/result/properties/feature_visited",
+          "type": "object",
+          "title": "The Feature_visited Schema"
+        },
+        "user_group_with_fullname": {
+          "$id": "#/properties/result/properties/user_group_with_fullname",
+          "type": "object",
+          "title": "The User_group_with_fullname Schema"
+        },
+        "synonym_search": {
+          "$id": "#/properties/result/properties/synonym_search",
+          "type": "boolean",
+          "title": "The Synonym_search Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "tfa_status": {
+          "$id": "#/properties/result/properties/tfa_status",
+          "type": "integer",
+          "title": "The Tfa_status Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "highlight_tags": {
+          "$id": "#/properties/result/properties/highlight_tags",
+          "type": "object",
+          "title": "The Highlight_tags Schema"
+        },
+        "sid": {
+          "$id": "#/properties/result/properties/sid",
+          "type": "string",
+          "title": "The Sid Schema",
+          "default": "",
+          "examples": [
+            "f4668054a5b7c87e59cd16529a3f9b889834d5aa8b67e54aa726331462bbd9f4"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "redlining_default": {
+          "$id": "#/properties/result/properties/redlining_default",
+          "type": "boolean",
+          "title": "The Redlining_default Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "beta_login": {
+          "$id": "#/properties/result/properties/beta_login",
+          "type": "boolean",
+          "title": "The Beta_login Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "other_flags": {
+          "$id": "#/properties/result/properties/other_flags",
+          "type": "object",
+          "title": "The Other_flags Schema"
+        },
+        "document_view": {
+          "$id": "#/properties/result/properties/document_view",
+          "type": "string",
+          "title": "The Document_view Schema",
+          "default": "",
+          "examples": [
+            "regular"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "snippet_len": {
+          "$id": "#/properties/result/properties/snippet_len",
+          "type": "string",
+          "title": "The Snippet_len Schema",
+          "default": "",
+          "examples": [
+            "400"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "pticker_setting": {
+          "$id": "#/properties/result/properties/pticker_setting",
+          "type": "boolean",
+          "title": "The Pticker_setting Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "alert_emails": {
+          "$id": "#/properties/result/properties/alert_emails",
+          "type": "boolean",
+          "title": "The Alert_emails Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "show_docpreview": {
+          "$id": "#/properties/result/properties/show_docpreview",
+          "type": "boolean",
+          "title": "The Show_docpreview Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "bulk_download_count": {
+          "$id": "#/properties/result/properties/bulk_download_count",
+          "type": "integer",
+          "title": "The Bulk_download_count Schema",
+          "default": 0,
+          "examples": [
+            25
+          ]
+        },
+        "fullname": {
+          "$id": "#/properties/result/properties/fullname",
+          "type": "string",
+          "title": "The Fullname Schema",
+          "default": "",
+          "examples": [
+            "Sangeeta Nandal"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "edge_emails": {
+          "$id": "#/properties/result/properties/edge_emails",
+          "type": "boolean",
+          "title": "The Edge_emails Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "compliance_groups": {
+          "$id": "#/properties/result/properties/compliance_groups",
+          "type": "array",
+          "title": "The Compliance_groups Schema"
+        },
+        "all_labels": {
+          "$id": "#/properties/result/properties/all_labels",
+          "type": "object",
+          "title": "The All_labels Schema"
+        },
+        "heatmap_view": {
+          "$id": "#/properties/result/properties/heatmap_view",
+          "type": "boolean",
+          "title": "The Heatmap_view Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "evernote_sync_status": {
+          "$id": "#/properties/result/properties/evernote_sync_status",
+          "type": "integer",
+          "title": "The Evernote_sync_status Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "tickers": {
+          "$id": "#/properties/result/properties/tickers",
+          "type": "array",
+          "title": "The Tickers Schema"
+        },
+        "tour_params": {
+          "$id": "#/properties/result/properties/tour_params",
+          "type": "object",
+          "title": "The Tour_params Schema"
+        },
+        "options": {
+          "$id": "#/properties/result/properties/options",
+          "type": "object",
+          "title": "The Options Schema"
+        },
+        "global_docsearch_switch": {
+          "$id": "#/properties/result/properties/global_docsearch_switch",
+          "type": "boolean",
+          "title": "The Global_docsearch_switch Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "login_popups": {
+          "$id": "#/properties/result/properties/login_popups",
+          "type": "object",
+          "title": "The Login_popups Schema"
+        }
+      }
+    },
+    "response": {
+      "$id": "#/properties/response",
+      "type": "object",
+      "title": "The Response Schema",
+      "required": [
+        "status",
+        "usid",
+        "apid",
+        "msg"
+       
+      ],
+      "properties": {
+        "status": {
+          "$id": "#/properties/response/properties/status",
+          "type": "boolean",
+          "title": "The Status Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "is_sentieo_data_user": {
+          "$id": "#/properties/response/properties/is_sentieo_data_user",
+          "type": "boolean",
+          "title": "The Is_sentieo_data_user Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "usid": {
+          "$id": "#/properties/response/properties/usid",
+          "type": "string",
+          "title": "The Usid Schema",
+          "default": "",
+          "examples": [
+            "f4668054a5b7c87e59cd16529a3f9b889834d5aa8b67e54aa726331462bbd9f4"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "is_customer": {
+          "$id": "#/properties/response/properties/is_customer",
+          "type": "boolean",
+          "title": "The Is_customer Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "apid": {
+          "$id": "#/properties/response/properties/apid",
+          "type": "string",
+          "title": "The Apid Schema",
+          "default": "",
+          "examples": [
+            "78e34d2fe6b68cc471bf95c6717f5b05037a233577c5cafbd82c5f319ff2a9eb"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "is_sentieo_data_admin": {
+          "$id": "#/properties/response/properties/is_sentieo_data_admin",
+          "type": "boolean",
+          "title": "The Is_sentieo_data_admin Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "msg": {
+          "$id": "#/properties/response/properties/msg",
+          "type": "string",
+          "title": "The Msg Schema",
+          "default": "",
+          "examples": [
+            "Login successful."
+          ],
+          "pattern": "^(.*)$"
+        },
+        "blocked": {
+          "$id": "#/properties/response/properties/blocked",
+          "type": "boolean",
+          "title": "The Blocked Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      }
+    }
+  }
+
+}

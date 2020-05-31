@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "counter",
+        "result",
+        "response"
+    ],
+    "properties": {
+        "counter": {
+            "type": "string",
+            "title": "The Counter Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "0"
+            ]
+        },
+        "result": {
+            "type": "array",
+            "title": "The Result Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                []
+            ],
+            "additionalItems": true
+        },
+        "response": {
+            "type": "object",
+            "title": "The Response Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "msg": [],
+                    "status": true
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "status",
+                "msg"
+            ],
+            "properties": {
+                "status": {
+                    "type": "boolean",
+                    "title": "The Status Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "msg": {
+                    "type": "array",
+                    "title": "The Msg Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        []
+                    ],
+                    "additionalItems": true
+                }
+            }
+        }
+    }
+}

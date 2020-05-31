@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Sentieo_tests" class="navigator-link">
+              <span class="suite-name border-failed">Sentieo tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Sentieo_tests" class="navigator-link ">
+                    <span>mobileApiTestng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Sentieo_tests" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Sentieo_tests" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Sentieo_tests" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Sentieo_tests" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Sentieo_tests" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Sentieo_tests" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Sentieo_tests" class="hide-methods failed suite-Sentieo_tests"> (hide)</a> <!-- hide-methods failed suite-Sentieo_tests -->
+                      <a href="#" panel-name="suite-Sentieo_tests" class="show-methods failed suite-Sentieo_tests"> (show)</a> <!-- show-methods failed suite-Sentieo_tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Sentieo_tests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sentieo_tests" title="com.sentieo.mobile.MobileFinanceApi" class="method navigator-link" hash-for-method="fetchLivePrice(irctc:in)">fetchLivePrice(irctc:in)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sentieo_tests" title="com.sentieo.mobile.MobileFinanceApi" class="method navigator-link" hash-for-method="fetchLivePrice(aapl)">fetchLivePrice(aapl)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sentieo_tests" title="com.sentieo.mobile.MobileFinanceApi" class="method navigator-link" hash-for-method="fetchLivePrice(vod:ln)">fetchLivePrice(vod:ln)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Sentieo_tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Sentieo_tests" class="panel Sentieo_tests">
+          <div class="suite-Sentieo_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sentieo.mobile.MobileFinanceApi</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fetchLivePrice(irctc:in)">
+                  </a> <!-- fetchLivePrice(irctc:in) -->
+                  <span class="method-name">fetchLivePrice</span>
+                  <span class="parameters">(irctc:in)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [100] but found [200]
+	at com.sentieo.mobile.MobileFinanceApi.fetchLivePrice(MobileFinanceApi.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Fetch Live Price)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fetchLivePrice(aapl)">
+                  </a> <!-- fetchLivePrice(aapl) -->
+                  <span class="method-name">fetchLivePrice</span>
+                  <span class="parameters">(aapl)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [100] but found [200]
+	at com.sentieo.mobile.MobileFinanceApi.fetchLivePrice(MobileFinanceApi.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Fetch Live Price)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fetchLivePrice(vod:ln)">
+                  </a> <!-- fetchLivePrice(vod:ln) -->
+                  <span class="method-name">fetchLivePrice</span>
+                  <span class="parameters">(vod:ln)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [100] but found [200]
+	at com.sentieo.mobile.MobileFinanceApi.fetchLivePrice(MobileFinanceApi.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Fetch Live Price)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sentieo_tests-class-failed -->
+        </div> <!-- panel Sentieo_tests -->
+        <div panel-name="test-xml-Sentieo_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/malikajain/Downloads/Mobile API Automation/mobileApiTestng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;Sentieo tests&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.sentieo.listener.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;mobileFinance&quot;&gt;
+    &lt;parameter name=&quot;PASSWORD&quot; value=&quot;Sentieo@123&quot;/&gt;
+    &lt;parameter name=&quot;OS&quot; value=&quot;MAC&quot;/&gt;
+    &lt;parameter name=&quot;EMAIL&quot; value=&quot;test.mobile02@testing.sentieo.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sentieo.mobile.MobileFinanceApi&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- mobileFinance --&gt;
+&lt;/suite&gt; &lt;!-- Sentieo tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Sentieo_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Sentieo tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">mobileFinance (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Sentieo_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Sentieo tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Sentieo_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Sentieo tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Sentieo_tests');
+function tableData_Sentieo_tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'fetchLivePrice')
+data.setCell(0, 2, 'com.sentieo.mobile.MobileFinanceApi')
+data.setCell(0, 3, 2360);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'fetchLivePrice')
+data.setCell(1, 2, 'com.sentieo.mobile.MobileFinanceApi')
+data.setCell(1, 3, 1722);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'fetchLivePrice')
+data.setCell(2, 2, 'com.sentieo.mobile.MobileFinanceApi')
+data.setCell(2, 3, 1524);
+window.suiteTableData['Sentieo_tests']= { tableData: data, tableDiv: 'times-div-Sentieo_tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <div id="times-div-Sentieo_tests">
+              </div> <!-- times-div-Sentieo_tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Sentieo_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Sentieo tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Sentieo_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">11 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.sentieo.mobile.MobileFinanceApi</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">mobileStockData</span>
+                <br/>
+                <span class="ignored-method-name">fetchGraphDataYearlyChart</span>
+                <br/>
+                <span class="ignored-method-name">comparableSearch</span>
+                <br/>
+                <span class="ignored-method-name">financialStatement1</span>
+                <br/>
+                <span class="ignored-method-name">fetchGraphDataFinMatrices</span>
+                <br/>
+                <span class="ignored-method-name">financialStatement</span>
+                <br/>
+                <span class="ignored-method-name">fetchGraphDataPriceChart</span>
+                <br/>
+                <span class="ignored-method-name">fetchValueTable</span>
+                <br/>
+                <span class="ignored-method-name">fetchPastIntra</span>
+                <br/>
+                <span class="ignored-method-name">financialModel</span>
+                <br/>
+                <span class="ignored-method-name">fetchGraphDataEstimateTrends</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Sentieo_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sentieo.mobile.MobileFinanceApi</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">fetchLivePrice(aapl)</span>
+                <span class="method-start">4483 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">fetchLivePrice(vod:ln)</span>
+                <span class="method-start">6854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">fetchLivePrice(irctc:in)</span>
+                <span class="method-start">8381 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

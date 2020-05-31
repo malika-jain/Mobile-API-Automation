@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sentieo tests" parallel="classes" thread-count="1" >
+
+  <listeners>
+        <listener class-name="com.sentieo.listener.Listener"/>
+   </listeners>
+   
+ <test name="mobileFinance" preserve-order="true">
+		<!-- <packages>
+			<package name="com.sentieo.mobile">
+			</package>
+		</packages> -->
+		<parameter name="EMAIL" value="test.mobile02@testing.sentieo.com"/>
+		<parameter name="PASSWORD" value="Sentieo@123"/>
+		<parameter name="OS" value="MAC"/>
+		<classes>
+		<class name = "com.sentieo.mobile.MobileFinanceApi"/>
+		</classes>
+	</test>
+  
+	
+</suite>
