@@ -56,8 +56,11 @@ dependencies {
     
 }
 
+
 test { 
 
     useTestNG() {
         suites "mobileApiTestng.xml"
     }
+
+}
