@@ -25,7 +25,6 @@ public class MobileFinanceApi extends RestAPISpecs {
 	TickerData obj = new TickerData();
 	List<String[]> tickers = obj.readTickerCSV();
 	
-    @Parameters({"EMAIL","PASSWORD"})
 	@BeforeClass
 	public void setup() throws Exception {
 		try {
@@ -307,7 +306,7 @@ public class MobileFinanceApi extends RestAPISpecs {
 		
 		System.out.println("Response Body is :" + resp.getBody().asString());
 		
-		assertEquals(resp.getStatusCode(), 200);
+		assertEquals(resp.getStatusCode(), 100);
 		
     }	
 	
