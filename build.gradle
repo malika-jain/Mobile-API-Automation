@@ -51,16 +51,16 @@ dependencies {
     
     compile group: 'com.aventstack', name: 'extentreports', version: '4.0.6'
     compile group: 'com.flipkart.zjsonpatch', name: 'zjsonpatch', version: '0.4.9'
-    
-    
-    
+            
 }
 
 test { 
 
     useTestNG() {
         suites "mobileApiTestng.xml"
-        
+        systemProperty "EMAIL", System.getProperty("EMAIL")
+    	systemProperty "PASSWORD", System.getProperty("PASSWORD")
+    	
     }
 
-}
+ }

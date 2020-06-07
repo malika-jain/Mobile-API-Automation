@@ -10,9 +10,9 @@
 			<package name="com.sentieo.mobile">
 			</package>
 		</packages> -->
-		<parameter name="EMAIL" value="test.mobile02@testing.sentieo.com"/>
+		<!-- <parameter name="EMAIL" value="test.mobile02@testing.sentieo.com"/>
 		<parameter name="PASSWORD" value="Sentieo@123"/>
-		<parameter name="OS" value="MAC"/>
+		<parameter name="OS" value="MAC"/> -->
 		<classes>
 		<class name = "com.sentieo.mobile.MobileFinanceApi"/>
 		</classes>

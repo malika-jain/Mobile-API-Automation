@@ -25,14 +25,16 @@ public class MobileFinanceApi extends RestAPISpecs {
 	TickerData obj = new TickerData();
 	List<String[]> tickers = obj.readTickerCSV();
 	
-    @Parameters({"EMAIL","PASSWORD"})
+    //@Parameters({"EMAIL","PASSWORD"})
 	@BeforeClass
 	public void setup() throws Exception {
 		try {
 			
 			String URI = USER_APP_URL + LOGIN_URL;
 			HashMap<String, String> loginData = new HashMap<String, String>();
-			loginData.put("email", "EMAIL");
+			System.out.println(System.getProperty("EMAIL"));
+			System.out.println(System.getProperty("PASSWORD"));
+			loginData.put("email", System.getProperty("EMAIL"));
 			loginData.put("password", "PASSWORD");
 
 			RequestSpecification spec = mobileLoginSpec(loginData);
@@ -301,13 +303,15 @@ public class MobileFinanceApi extends RestAPISpecs {
 		
 		priceData.put("ticker", ticker);
 		
+		
+		
 		RequestSpecification spec = mobileFormParamsSpec(priceData);
 		Response resp = RestUtils.post(URI, null, spec, priceData);
-		
+		System.out.println(System.getProperty("EMAIL"));
 		
 		System.out.println("Response Body is :" + resp.getBody().asString());
 		
-		assertEquals(resp.getStatusCode(), 200);
+		assertEquals(resp.getStatusCode(), 100);
 		
     }	
 	
