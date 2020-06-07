@@ -32,10 +32,13 @@ public class MobileFinanceApi extends RestAPISpecs {
 			
 			String URI = USER_APP_URL + LOGIN_URL;
 			HashMap<String, String> loginData = new HashMap<String, String>();
-			System.out.println(System.getProperty("EMAIL"));
-			System.out.println(System.getProperty("PASSWORD"));
-			loginData.put("email", System.getProperty("EMAIL"));
-			loginData.put("password", "PASSWORD");
+			String email = System.getProperty("EMAIL");
+			String password = System.getProperty("PASSWORD");
+			
+			System.out.println(email);
+			System.out.println(password);
+			loginData.put("email", email);
+			loginData.put("password", password);
 
 			RequestSpecification spec = mobileLoginSpec(loginData);
 			Response resp = RestUtils.login(URI, null, spec, loginData);
@@ -191,11 +194,13 @@ public class MobileFinanceApi extends RestAPISpecs {
     }
 	
 
-	@Test(enabled = false,description = "Fetch Past Intra", dataProvider = "tickerdataprovider", dataProviderClass = DataProviderClass.class)
+	@Test(enabled = true,description = "Fetch Past Intra", dataProvider = "tickerdataprovider", dataProviderClass = DataProviderClass.class)
     public void fetchPastIntra(String ticker) throws Exception
     {
 		String URI =  APP_URL + FETCH_PAST_INTRA;
 		HashMap<String, Object> intraData = new HashMap<String, Object>();
+		
+		
 		
 		intraData.put("ticker", ticker);
 		//intraData.put("frequency", "300s");
@@ -295,7 +300,7 @@ public class MobileFinanceApi extends RestAPISpecs {
 		
     }	
 
-	@Test(description = "Fetch Live Price", dataProvider = "tickerdataprovider", dataProviderClass = DataProviderClass.class)
+	@Test(enabled=false,description = "Fetch Live Price", dataProvider = "tickerdataprovider", dataProviderClass = DataProviderClass.class)
     public void fetchLivePrice(String ticker) throws Exception
     {
 		String URI =  APP_URL + FETCH_LIVE_PRICE;
