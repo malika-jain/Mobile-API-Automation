@@ -1,9 +1,7 @@
 package com.sentieo.mobile;
 
-
 import static com.sentieo.constants.Constants.*;
 import static org.testng.Assert.assertEquals;
-
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,7 +9,7 @@ import java.util.List;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.annotations.Parameters;
+
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.specification.RequestSpecification;
@@ -32,13 +30,14 @@ public class MobileFinanceApi extends RestAPISpecs {
 			
 			String URI = USER_APP_URL + LOGIN_URL;
 			HashMap<String, String> loginData = new HashMap<String, String>();
-			String email = System.getProperty("EMAIL");
-			String password = System.getProperty("PASSWORD");
+//			String email = System.getProperty("EMAIL");
+//			String password = System.getProperty("PASSWORD");
 			
-			System.out.println(email);
-			System.out.println(password);
-			loginData.put("email", email);
-			loginData.put("password", password);
+			System.out.println(EMAIL);
+			System.out.println(PASSWORD);
+	
+			loginData.put("email", EMAIL);
+			loginData.put("password", PASSWORD);
 
 			RequestSpecification spec = mobileLoginSpec(loginData);
 			Response resp = RestUtils.login(URI, null, spec, loginData);
@@ -200,8 +199,11 @@ public class MobileFinanceApi extends RestAPISpecs {
 		String URI =  APP_URL + FETCH_PAST_INTRA;
 		HashMap<String, Object> intraData = new HashMap<String, Object>();
 		
-		
-		
+	      System.out.println("app url is: "+ APP_URL);
+	      System.out.println(EMAIL);
+		  System.out.println(PASSWORD);
+		  System.out.println(ENV);
+		  System.out.println(APP_URL + FETCH_PAST_INTRA);
 		intraData.put("ticker", ticker);
 		//intraData.put("frequency", "300s");
 		//intraData.put("counter", 1);

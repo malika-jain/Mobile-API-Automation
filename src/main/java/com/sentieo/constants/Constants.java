@@ -4,9 +4,22 @@ package com.sentieo.constants;
 
 public class Constants {
 
+	public static String EMAIL = "";
+	public static String PASSWORD = "";
+	public static String ENV = "";
+	public static  String APP_URL;
+	public static String USER_APP_URL;
+	static
+	{
+		EMAIL = System.getProperty("EMAIL");
+		PASSWORD = System.getProperty("PASSWORD");
+		ENV = System.getProperty("env");
+		APP_URL = "https://" + ENV+ ".sentieo.com";
+		USER_APP_URL = "https://user-" + ENV + ".sentieo.com";
+	}
+	
 	// base URL
-	public static final String APP_URL = "https://app2.sentieo.com";
-	public static final String USER_APP_URL = "https://user-app2.sentieo.com";
+	 
 
 	
 	// finance

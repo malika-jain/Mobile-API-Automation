@@ -60,6 +60,7 @@ test {
         suites "mobileApiTestng.xml"
         systemProperty "EMAIL", System.getProperty("EMAIL")
     	systemProperty "PASSWORD", System.getProperty("PASSWORD")
+    	systemProperty "env", System.getProperty("env")
     	
     }
 
